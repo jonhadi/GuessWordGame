@@ -5,20 +5,24 @@
     <title>Guess the Word</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
-  <body onkeydown="guessGame()">
-    <header><h1>Guess My Word!</h1></header>
-    <div id="curtain">Press Any Key to Start</div>
-    <h3>The Word: </h3>
-    <div id='guess-word'></div>
-   
-    <h3">Guessing Remaning: </h3>
-    <div id="gRem"></div>
-    <h3>Letters Guessed: </h3>
-    <div id='guessed'></div>
+  <body onkeydown="guessGame(event)">
+    <header><h1 class = "page">Guess My Word!</h1></header>
+    <div class="page container">
+      <div id="curtain">Press Any Key to Start</div>
+      <h2>The Word: </h3>
+      <div id='guess-word'></div>
+      <h2>Wins:</h2>
+      <div id='wins'>0</div>
+      <h2>Losses:</h2>
+      <div id='losses'>0</div>
+      <h3>Guessing Remaning: </h3>
+      <div id="guess-rem"></div>
+      <h3>Letters Guessed: </h3>
+      <div id='guessed'></div>
+    </div>
+
 
     <script src="assets/javascript/game.js"></script>
-   
-    
     <footer></footer>
-  </body>
+  </body>   
 </html>

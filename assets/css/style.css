@@ -3,4 +3,35 @@
     display: none;
 }
 
+body {
+    background: #dddddd;
+    border-color: #dddddd;
+    margin: 0px;
+}
 
+header {
+    background: #ffffff;
+    border-color: #cccccc; 
+    width: 100%;
+    border-bottom: 3px solid #7777;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.page {
+    background: #ffffff;
+    width: 960px;
+    margin: auto;
+}
+
+.container {
+    padding: 20px;
+}
+
+#guess-word {
+    font-size: 2em;
+}
+
+#guess-rem, #guessed {
+    font-size: 1.2em;
+}
