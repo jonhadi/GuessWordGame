@@ -6,23 +6,51 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body onkeydown="guessGame(event)">
-    <header><h1 class = "page">Guess My Word!</h1></header>
-    <div class="page container">
-      <div id="curtain">Press Any Key to Start</div>
-      <h2>The Word: </h3>
-      <div id='guess-word'></div>
-      <h2>Wins:</h2>
-      <div id='wins'>0</div>
-      <h2>Losses:</h2>
-      <div id='losses'>0</div>
-      <h3>Guessing Remaning: </h3>
-      <div id="guess-rem"></div>
-      <h3>Letters Guessed: </h3>
-      <div id='guessed'></div>
-    </div>
+
+    
+    <!-- The parent component -->
+<div class="curtain">
+    
+  <!-- The component wrapper -->
+<div class="curtain__wrapper">
+  
+  <!-- The checkbox hack! -->
+    <input type="checkbox" checked>
+  
+  <!-- The left curtain panel -->
+  <div class="curtain__panel curtain__panel--left">
+    <img src="assets/images/left-gate.jpg">
+  </div> <!-- curtain__panel -->
+  
+  <!-- The prize behind the curtain panels -->
+  <div class="curtain__prize">
+    
+      <header><h1 class = "page">Guess My Word! Or Die!</h1></header>
+      <div class="page container">
+        <div id="curtain">Press Any Key to Start</div>
+        <h2>The Word: </h3>
+        <div id='guess-word'></div>
+        <h2>Wins:</h2>
+        <div id='wins'>0</div>
+        <h2>Losses:</h2>
+        <div id='losses'>0</div>
+        <h3>Guessing Remaning: </h3>
+        <div id="guess-rem"></div>
+        <h3>Letters Guessed: </h3>
+        <div id='guessed'></div>
+      </div>
+
+  </div> <!-- curtain__prize -->
+  
+  <!-- The right curtain panel -->
+  <div class="curtain__panel curtain__panel--right">
+      <img src="assets/images/right-gate.jpg">
+  </div> <!-- curtain__panel -->
+  
+</div> <!-- curtain__wrapper -->
+</div> <!-- curtain -->
 
 
     <script src="assets/javascript/game.js"></script>
-    <footer></footer>
   </body>   
 </html>
