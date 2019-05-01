@@ -64,9 +64,8 @@ header {
   }
         
   .curtain__panel {
-    background: orange;
     width: 50%; /* Each panel takes up half the container */
-    height: 100vh; /* Used for demo purposes */
+    height: 100%; /* Used for demo purposes */
     float: left; /* Makes sure panels are side-by-side */
     position: relative; /* Needed to define the z-index */
     z-index: 2; /* Places the panels in front of the prize */
